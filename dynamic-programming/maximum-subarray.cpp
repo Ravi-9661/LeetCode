@@ -5,10 +5,10 @@ public:
         int currSum = 0;
         int maxSum = nums[0];
 
-        for (int i = 0; i < nums.size(); i++) {
+        for (int i = 1; i < nums.size(); i++) {
             currSum +=nums[i];
             maxSum = max(maxSum, currSum);
-            if(currSum<0) currSum=0;
+            if(currSum<0) currSum=1;
         }
 
         return maxSum;
