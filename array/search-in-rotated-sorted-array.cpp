@@ -13,7 +13,7 @@ public:
                 return mid;
             }
             
-            if (nums[left] <= nums[mid]) {
+            if (nums[0] <= nums[mid]) {
          
                 if (target >= nums[left] && target < nums[mid]) {
                     right = mid - 1; 
