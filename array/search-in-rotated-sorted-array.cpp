@@ -10,14 +10,13 @@ public:
             if(nums[mid]==target){
                 return mid;
             }
-            if(nums[left]<=nums[mid]){
+            else if(nums[left]<=nums[mid]){
              if(target >=nums[left]&&target<nums[mid]){
                 right = mid-1;
              }else{
                 left = mid +1;
              }
-             }
-             else if{
+             }else{
                 if(target>nums[mid]&&target<nums[right]){
                     left=mid + 1;
                 }else{
