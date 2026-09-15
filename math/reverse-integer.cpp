@@ -10,7 +10,7 @@ public:
 
             x = x / 10;
 
-            rev = rev * 10 + digit;
+            // rev = rev * 10 + digit;
         }
 
         return rev;
